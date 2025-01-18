@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./index.js localhost 3000",
-    "vercel-build": "npx sequelize-cli db:migrate --force"
+    "vercel-build": "sequelize-cli db:migrate",
+    "postinstall": "npx sequelize-cli db:migrate"
   },
   "keywords": [],
   "author": "",
